@@ -32,9 +32,35 @@ Results
 
 The following graph shows how gate values are distributed after training:
 
-![Gate Distribution](results.png)
+
+### 🔹 Lambda = 0.001
+![Lambda 0.001](result_lambda_0.001.png)
+
+### 🔹 Lambda = 0.01
+![Lambda 0.01](result_lambda_0.01.png)
+
+### 🔹 Lambda = 0.1
+![Lambda 0.1](result_lambda_0.1.png)
 
 ---
+ Observations
+
+- For **λ = 0.001**:
+  - Most gate values are closer to 1
+  - Very little pruning occurs
+  - Higher model accuracy
+
+- For **λ = 0.01**:
+  - Balanced distribution of gate values
+  - Moderate pruning
+  - Good trade-off between accuracy and sparsity
+
+- For **λ = 0.1**:
+  - Many gate values are pushed close to 0
+  - High sparsity (aggressive pruning)
+  - Slight drop in accuracy
+
+ This demonstrates the trade-off between sparsity and accuracy controlled by the regularization parameter λ.
 
  Key Insights
 
