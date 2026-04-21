@@ -32,6 +32,14 @@ Results
 
 The following graph shows how gate values are distributed after training:
 
+### Lambda = 0.001
+![Graph](graph1.png)
+
+### Lambda = 0.01
+![Graph](graph2.png)
+
+### Lambda = 0.1
+![Graph](graph3.png)
 
 ### 🔹 Lambda = 0.001
 ![Lambda 0.001](result_lambda_0.001.png)
